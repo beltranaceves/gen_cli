@@ -1,4 +1,4 @@
-defmodule GenCli.Runner do
+defmodule GenCLI.Runner do
   @moduledoc "The gen mix task: `mix help gen`"
 
   @default_flags ["--install"]

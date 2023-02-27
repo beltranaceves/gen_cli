@@ -1,89 +1,109 @@
 # Generable elements
 defmodule :Html do
-  defstruct [command: "html",
-            "no-context": false,
-            "no-schema": false,
-            :context,
-            :schema,
-            :web]
-  use ExConstructor
-end
-
-defmodule :Schema do
-  defstruct [command: "schema",
-            "no-migration": false,
-            :fields]
-  use ExConstructor
-end
-
-defmodule :Notifier do
-  defstruct [command: "notifier",
-            :context,
-            :notifier_name,
-            :message_names: []]
-  use ExConstructor
-end
-
-defmodule :Secret do
-  defstruct [command: "secret",
-            :length]
-  use ExConstructor
-end
-
-defmodule :Json do
-  defstruct [command: "json",
+  defstruct [
             :context,
             :schema,
             :web,
             "no-context": false,
-            "no-schema": false]
+            "no-schema": false,
+            command: "html"
+            ]
+  use ExConstructor
+end
+
+defmodule :Schema do
+  defstruct [
+            :fields,
+            "no-migration": false,
+            command: "schema"
+            ]
+  use ExConstructor
+end
+
+defmodule :Notifier do
+  defstruct [
+            :context,
+            :notifier_name,
+            message_names: [],
+            command: "notifier"
+            ]
+  use ExConstructor
+end
+
+defmodule :Secret do
+  defstruct [
+            :length,
+            command: "secret"
+            ]
+  use ExConstructor
+end
+
+defmodule :Json do
+  defstruct [
+            :context,
+            :schema,
+            :web,
+            "no-context": false,
+            "no-schema": false,
+            command: "json"
+            ]
   use ExConstructor
 end
 
 defmodule :Embedded do
-  defstruct [command: "embedded",
-            :schema]
+  defstruct [
+            :schema,
+            command: "embedded"
+            ]
   use ExConstructor
 end
 
 defmodule :Release do
-  defstruct [command: "release",
+  defstruct [
             docker: [],
             "no-ecto": [],
             ecto: [],
+            command: "release"
             ]
   use ExConstructor
 end
 
 defmodule :Socket do
-  defstruct [command: "socket",
-            :module_name]
+  defstruct [
+            :module_name,
+            command: "socket"]
   use ExConstructor
 end
 
 defmodule :Live do
-  defstruct [command: "live",
-            "no-context": false,
-            "no-schema": false,
+  defstruct [
             :context,
             :schema,
-            :web]
+            :web,
+            "no-context": false,
+            "no-schema": false,
+            command: "live"
+            ]
   use ExConstructor
 end
 
 defmodule :Presence do
-  defstruct [command: "presence",
-            :module_name]
+  defstruct [
+            :module_name,
+            command: "presence"
+            ]
   use ExConstructor
 end
 
 defmodule :Context do
-  defstruct [command: "context",
+  defstruct [
             :name,
             :schema,
             "no-schema": false,
             "--merge-with-existing-context": false,
-            "--no-merge-with-existing-context": false]
+            "--no-merge-with-existing-context": false,
+            command: "context"
+            ]
   use ExConstructor
 end
 
@@ -93,16 +113,20 @@ defmodule :Cert do
 end
 
 defmodule :Channel do
-  defstruct [command: "channel",
-            :module_name]
+  defstruct [
+            :module_name,
+            command: "channel"
+            ]
   use ExConstructor
 end
 
 defmodule :Auth do
-  defstruct [command: "auth",
+  defstruct [
             :context,
             :schema,
-            "hashing-lib": "bcrypt"
-            :web]
+            :web,
+            "hashing-lib": "bcrypt",
+            command: "auth"
+            ]
   use ExConstructor
 end
