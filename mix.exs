@@ -1,21 +1,21 @@
-defmodule HexTemplate.MixProject do
+defmodule GenCLI.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :hex_template,
-      description: "Starter Hex package for Elixir 1.14.3",
+      app: :gen_cli,
+      description: "CLI tool for gen_dsl",
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      source_url: "https://github.com/beltranaceves/hex_template",
+      source_url: "https://github.com/beltranaceves/gen_cli",
       homepage_url: "HEX_URL",
       package: [
         maintainers: ["Beltrán Aceves Gil"],
         licenses: ["MIT"],
         links: %{
-          "GitHub" => "https://github.com/beltranaceves/hex_template"}
+          "GitHub" => "https://github.com/beltranaceves/gen_cli"}
       ]
     ]
   end

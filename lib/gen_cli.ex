@@ -1,6 +1,6 @@
-defmodule HexTemplate do
+defmodule GenCLI do
   @moduledoc """
-  Documentation for `HexTemplate`.
+  Documentation for `GenCLI`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule HexTemplate do
 
   ## Examples
 
-      iex> HexTemplate.hello()
+      iex> GenCLI.hello()
       :world
 
   """
