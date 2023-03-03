@@ -5,12 +5,12 @@ defmodule GenCLI do
 
   @doc """
   Hello world.
-
+  
   ## Examples
-
+  
       iex> GenCLI.hello()
       :world
-
+  
   """
   def hello do
     :world

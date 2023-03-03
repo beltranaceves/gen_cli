@@ -15,7 +15,8 @@ defmodule GenCLI.MixProject do
         maintainers: ["Beltrán Aceves Gil"],
         licenses: ["MIT"],
         links: %{
-          "GitHub" => "https://github.com/beltranaceves/gen_cli"}
+          "GitHub" => "https://github.com/beltranaceves/gen_cli"
+        }
       ]
     ]
   end
@@ -35,7 +36,8 @@ defmodule GenCLI.MixProject do
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
       {:phx_new, "~> 1.6"},
       {:poison, "~> 5.0"},
-      {:exconstructor, "~> 1.2"} # TODO: check deps and versions
+      # TODO: check deps and versions
+      {:exconstructor, "~> 1.2"}
     ]
   end
 end
