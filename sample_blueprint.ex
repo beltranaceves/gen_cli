@@ -1,1 +1,1 @@
-[{"type":"Release","docker_flag": "--docker"}]
+[{"type":"App","path": "NEW_NAME"}, {"type": "Schema", "module": "Blog.Post"}, {"type": "Notifier", "context": "Blog.Post", "name": "PostNotifier", "message_names": ["post_created", "post_updated", "post_deleted"]}]
