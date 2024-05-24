@@ -5,7 +5,7 @@ defmodule GenCLI.MixProject do
     [
       app: :gen_cli,
       description: "CLI tool for gen_dsl",
-      version: "0.1.5",
+      version: "0.1.6",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -36,7 +36,7 @@ defmodule GenCLI.MixProject do
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
       # TODO: check deps and versions
       # {:gen_dsl, path: "../gen_dsl", only: :dev}
-      {:gen_dsl, "~> 0.2.6"}
+      {:gen_dsl, "~> 0.2.7"}
     ]
   end
 end
