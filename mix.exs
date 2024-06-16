@@ -35,8 +35,6 @@ defmodule GenCLI.MixProject do
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
-      # TODO: check deps and versions
-      # {:gen_dsl, path: "../gen_dsl"}
       {:gen_dsl, "~> 0.3.5"}
     ]
   end
